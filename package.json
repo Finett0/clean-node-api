@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "jest": "^30.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0"
   }
 }

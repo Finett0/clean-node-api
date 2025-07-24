@@ -35,3 +35,6 @@ e a data de retorno
 [] Mostar todos os empréstimo pendentes, com o nome do livro, nome do usuário, CPF, data de saída e data de retorno. Ordenamos pela data de retorno mais antiga
 
 ## Estruturas
+
+##UsuariosRepository
+[] cadastrar: ({nome_completo,CPF,telefone,endereco,email}) => Promise<void>

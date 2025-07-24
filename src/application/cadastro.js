@@ -1,6 +1,6 @@
-module.exports = function cadastratUsuarioUseCase() {
+module.exports = function cadastratUsuarioUseCase({ usuariosRepository }) {
   return async function ({ nome_completo, CPF, telefone, endereco, email }) {
-    await usuarioRepository.cadastrar({
+    await usuariosRepository.cadastrar({
       nome_completo,
       CPF,
       telefone,
