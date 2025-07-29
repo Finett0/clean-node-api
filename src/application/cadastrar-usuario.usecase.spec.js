@@ -1,4 +1,5 @@
 const cadastrarUsuariosUseCase = require("./cadastro");
+const AppError = require("./shared/errors/AppError");
 
 describe("Cadastrar usuario UseCase", function () {
   const usuariosRepository = {
@@ -21,7 +22,7 @@ describe("Cadastrar usuario UseCase", function () {
   });
   test("Deve retornar um throw AppeError se o usuariosRepository não for fornecido", function () {
     expect(() => cadastrarUsuariosUseCase({})).toThrow(
-      "usuariosRepository não fornecido"
+      new AppError(AppError.dependencias)
     );
   });
 });
